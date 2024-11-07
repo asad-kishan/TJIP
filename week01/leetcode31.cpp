@@ -1,11 +1,11 @@
-// 31. Next Permutation
-// https://leetcode.com/problems/next-permutation
+// 31. Next Permutation >> https://leetcode.com/problems/next-permutation/
+// Time: O(N) where N is the size of the array
+// Space: O(1) 
 
 class Solution {
 public:
     void nextPermutation(vector<int>& nums) {
-        int idx = -1;
-        int n = nums.size();
+        int idx = -1, n = nums.size();
         for(int i = n -2; i >= 0; i--) {
             if(nums[i] < nums[i+1]) {
                 idx = i;
