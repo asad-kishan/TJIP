@@ -1,5 +1,4 @@
-// 380. Insert Delete GetRandom O(1)
-// https://leetcode.com/problems/insert-delete-getrandom-o1/description/
+// 380. Insert Delete GetRandom O(1) >> https://leetcode.com/problems/insert-delete-getrandom-o1/
 
 class RandomizedSet {
 public:
@@ -35,4 +34,4 @@ public:
         int rand_idx = rand() % list.size();
         return list[rand_idx];
     }
-}; 
+};
