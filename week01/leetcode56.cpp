@@ -1,5 +1,6 @@
-// 56. Merge Intervals
-// https://leetcode.com/problems/merge-intervals/description/
+// 56. Merge Intervals >> https://leetcode.com/problems/merge-intervals/
+// Time: O(NlogN) where N is the size of the input array
+// Space: O(N) where N is the size of the input array
 
 class Solution {
 public:
@@ -9,10 +10,8 @@ public:
     
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
         sort(intervals.begin(), intervals.end(), customComparator);
-
         vector<vector<int>> result;
         result.push_back(intervals[0]);
-
         for(int i = 1; i < intervals.size(); i++) {
             int top = result.size() - 1;
             if(intervals[i][0] <= result[top][1]) {
@@ -21,7 +20,6 @@ public:
                 result.push_back(intervals[i]);
             }
         }
-
         return result;
     }
 };
