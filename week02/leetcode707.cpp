@@ -1,5 +1,4 @@
-// 707. Design Linked List
-// https://leetcode.com/problems/design-linked-list/description/
+// 707. Design Linked List >> https://leetcode.com/problems/design-linked-list/
 
 class MyLinkedList {
     struct Node {
