@@ -1,6 +1,6 @@
 // 108. Convert Sorted Array to Binary Search Tree >> https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 // Time: O(N) where N is the size of the input array
-// Space: O(log N) for the recursion stack
+// Space: O(N) 
 
 class Solution {
 public:
